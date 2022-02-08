@@ -12,7 +12,12 @@
 <body>
     <h1>Hello Mr! It 1st JS homework!</h1>
     <hr>
+    <h1>1000 + "108" = "1000108"</h1>
     <h1 Id="message" class="message"></h1>
+    <h1 Id="message2" class="message"></h1>
+    <h1 Id="message3" class="message"></h1>
+    <script src="sync.js"></script>
+    <script defer src="defer.js"></script>
     <script>
         'use strict';
         let tCel = prompt("Введите температуру в градусах цельсия!", 25);
@@ -20,6 +25,15 @@
         alert('Celsium = ' + tCel + ', Kelvin = ' + tKel);
         var message = 'Celsium = ' + tCel + ', Kelvin = ' + tKel;
         document.getElementById("message").innerHTML = message;
+    </script>
+    <script async src="async.js"></script>
+    <script>
+        var admin = 'Peter';
+        var name = 'Vasiliy';
+        admin = name;
+        alert('So, here it is ' + admin);
+        var message = admin;
+        document.getElementById("message2").innerHTML = message;
     </script>
 </body>
 
