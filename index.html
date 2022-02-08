@@ -1,1 +1,26 @@
-//stone
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Hello Mr! It 1st JS homework!</h1>
+    <hr>
+    <h1 Id="message" class="message"></h1>
+    <script>
+        'use strict';
+        let tCel = prompt("Введите температуру в градусах цельсия!", 25);
+        var tKel = (9 / 5) * tCel + 32;
+        alert('Celsium = ' + tCel + ', Kelvin = ' + tKel);
+        var message = 'Celsium = ' + tCel + ', Kelvin = ' + tKel;
+        document.getElementById("message").innerHTML = message;
+    </script>
+</body>
+
+</html>
