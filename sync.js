@@ -1,2 +1,2 @@
-var message = 'Я синхронный!';
+var message = 'Я синхронный!';//!
 alert(message);

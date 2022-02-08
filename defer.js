@@ -1,2 +1,2 @@
-var message = 'Я defer!';
+var message = 'Я defer!';//!
 alert(message);

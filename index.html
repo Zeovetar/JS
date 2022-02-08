@@ -16,8 +16,8 @@
     <h1 Id="message" class="message"></h1>
     <h1 Id="message2" class="message"></h1>
     <h1 Id="message3" class="message"></h1>
-    <script src="sync.js"></script>
-    <script defer src="defer.js"></script>
+    <script src="sync.js">//sync</script>
+    <script defer src="defer.js">//defer</script>
     <script>
         'use strict';
         let tCel = prompt("Введите температуру в градусах цельсия!", 25);
@@ -26,7 +26,7 @@
         var message = 'Celsium = ' + tCel + ', Kelvin = ' + tKel;
         document.getElementById("message").innerHTML = message;
     </script>
-    <script async src="async.js"></script>
+    <script async src="async.js">//async</script>
     <script>
         var admin = 'Peter';
         var name = 'Vasiliy';
