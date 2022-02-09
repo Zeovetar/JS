@@ -1,1 +1,94 @@
-//stone
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1 упражнение
+        //пример 1
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); // ответ: 2 Сначала присвоили, потом вывели
+
+        //пример 2
+        d = b++;
+        alert(d); //ответ: 1 Сначала вывели, потом произошло присвоение
+
+        //пример 3
+        c = 2 + ++a;
+        alert(c); //ответ: 5 - "а" наданный момент содержит 2, с = 2 + 3, где 3 это ++2
+
+        //пример 4
+        d = 2 + b++;
+        alert(d); //ответ: 4 - d = 2 + 1++ итого 2+2=4
+        alert(a); //3 - в "а" лежет 3 с прошлого примера
+        alert(b); //3 - в "b" было 2 в примере "2" и в примере 4 стало "3"
+    </script>
+    <script>
+        // 2 упражнение
+        let a = 2;
+        let x = 1 + (a *= 2);
+        alert(x);
+    </script>
+    <script>
+        // 3 упражнение
+        let a1 = prompt("Please, input value for 'a'");
+        let b1 = prompt("Please, input value for 'b'");
+
+        function checkInput(a, b) {
+            if (a >= 0 & b >= 0) {
+                return 1;
+            }
+            else if (a < 0 && b < 0) {
+                return 2;
+            }
+            else if (a * b < 0) {
+                return 3;
+            }
+        }
+
+        switch (checkInput(a1, b1)) {
+            case 1:
+                alert(+a1 - +b1);
+                break;
+            case 2:
+                alert(+a1 * +b1);
+                break;
+            case 3:
+                alert(+a1 + +b1);
+                break;
+            default:
+                alert("Что то пошло не так!?");
+        }
+    </script>
+    <script>
+        // 4 упражнение
+        let a2 = prompt("Please, input value for 'a'");
+        let b2 = prompt("Please, input value for 'b'");
+        function plus(a, b) {
+            return +a + +b;
+        }
+        function minus(a, b) {
+            return +a - +b;
+        }
+        function delit(a, b) {
+            return +a / +b;
+        }
+        function umnoj(a, b) {
+            return +a * +b;
+        }
+
+        alert(plus(a2, b2));
+        alert(minus(a2, b2));
+        alert(delit(a2, b2));
+        alert(umnoj(a2, b2));
+    </script>
+</body>
+
+</html>
